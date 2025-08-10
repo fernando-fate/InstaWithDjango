@@ -22,7 +22,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('insta/', include('feed.urls')),
+    path('', include('feed.urls')),
     # path('accounts/', include('django.contrib.auth.urls')),
 ]
 
