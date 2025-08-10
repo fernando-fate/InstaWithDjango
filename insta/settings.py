@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1s*eog=605z4h!w^y2y(apjdz4bw_*m0sd_n1nbvg%1maxzgfr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['instawithdjango.onrender.com']
+ALLOWED_HOSTS = ['https://instawithdjango.onrender.com']
 
 
 # Application definition

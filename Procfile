@@ -1,1 +1,1 @@
-web: gunicorn insta.wsgi
+web: gunicorn insta.wsgi:application --bind 0.0.0.0:$PORT
