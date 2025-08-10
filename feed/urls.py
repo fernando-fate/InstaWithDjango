@@ -4,7 +4,8 @@ from . import views
 
 app_name = 'feed'
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', auth_views.LoginView.as_view(template_name='feed/login.html'), name='login'),
+    path('home/', views.home, name='home'),
     path('explore/', views.explore, name='explore'),
     path('post/new/', views.create_post, name='create_post'),
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
