@@ -24,9 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1s*eog=605z4h!w^y2y(apjdz4bw_*m0sd_n1nbvg%1maxzgfr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['instawithdjango.onrender.com']
+
+# Add Render domain to CSRF_TRUSTED_ORIGINS
+CSRF_TRUSTED_ORIGINS = ['https://instawithdjango.onrender.com']
 
 
 # Application definition
